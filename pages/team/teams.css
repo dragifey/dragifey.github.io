@@ -21,7 +21,7 @@ html {
 :root{
 	--soft-shadow: -2px 26px 51px -5px rgba(0,0,0,0.51);
 	--scale: scale(1.015);
-	--dark-pink: #e08794;
+	--dark-pink: #a488bd;
 }
 
 
@@ -81,7 +81,11 @@ header ul li a{
 	font-weight: 300;
 	transition: 0.6s;
 }
+header ul li a:hover{
+	opacity: .5;
+}
 
+/*
 header ul li a::after{
 	content: '';
 	height: 3px;
@@ -95,27 +99,18 @@ header ul li a::after{
 
 header ul li a:hover::after{
 	width: 100%;
-}
+}*/
 
 header.sticky .logo{
-	color: #99AAB5;
+	color: #342f38;
 }
 header.sticky ul li a {
 	color: #000;
 }
-header.sticky ul li a:hover::after{
-	width: 100%;
+header.sticky ul li a:hover{
+	opacity: .5;
 }
-header.sticky ul li a::after{
-	content: '';
-	height: 3px;
-	width: 0%;
-	background: #689679;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	transition: width 0.5s;
-}
+
 
 .toggle{
 	display: none;
@@ -346,13 +341,15 @@ footer{
 }
 .social-media a{
 	margin: 20px;
-	color: #fff;	
-	transition: 0.4s;
+	color: #fff;
+	transition: 0.5s;
+	/*transition: color .2s ease-out 0s;*/
 }
 .social-media a:hover{
-	transform: translateY(-2px);
-	transition: 0.4s;
+	opacity: .8;
+    transition: 0.5s;
 }
+
 .copyright{
 	color: #fff;
 	padding-top: 15px;

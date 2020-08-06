@@ -95,23 +95,13 @@ header ul li a:hover::after{
 }*/
 
 header.sticky .logo{
-	color: #99AAB5;
+	color: #342f38;
 }
 header.sticky ul li a {
 	color: #000;
 }
-header.sticky ul li a:hover::after{
-	width: 100%;
-}
-header.sticky ul li a::after{
-	content: '';
-	height: 3px;
-	width: 0%;
-	background: #689679;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	transition: width 0.5s;
+header.sticky ul li a:hover{
+	opacity: .5;
 }
 
 .banner {
@@ -888,7 +878,7 @@ footer{
 	width: 100%;
 	position: relative;
 	bottom: 0;
-	background: rgb(21,22,26);
+	background: #101213;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -933,11 +923,12 @@ footer{
 .social-media a{
 	margin: 20px;
 	color: #fff;
-	transition: color .2s ease-out 0s;
+	transition: 0.5s;
+	/*transition: color .2s ease-out 0s;*/
 }
 .social-media a:hover{
-	color: #689679;
-    animation: all ease 0.5s;
+	opacity: .8;
+    transition: 0.5s;
 }
 .copyright{
 	color: #fff;
@@ -953,7 +944,7 @@ footer{
 	font-size: 11px;
 	padding: 10px;
 	padding-left: 14px;
-	background: rgb(21,22,26);
+	background: #101213;
 }
 
 .credits-p{
@@ -962,6 +953,12 @@ footer{
 	font-weight: bold;
 	text-decoration: none;
 }
+
+.credits-p:hover{
+	color: #697ab5;
+	transition: 0.2s;
+}
+
 .credit-part{
 
 	color: #fff;

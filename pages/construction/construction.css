@@ -86,11 +86,16 @@ header ul li a{
 	transition: 0.6s;
 }
 
-header ul li a::after{
+header ul li a:hover{
+	opacity: .5;
+
+}
+
+/*header ul li a::after{
 	content: '';
 	height: 3px;
 	width: 0%;
-	background: #deca81;
+	background: #689679;
 	position: absolute;
 	margin-bottom: -3px; 
 	bottom: 0;
@@ -100,26 +105,16 @@ header ul li a::after{
 
 header ul li a:hover::after{
 	width: 100%;
-}
+}*/
 
 header.sticky .logo{
-	color: #99AAB5;
+	color: #342f38;
 }
 header.sticky ul li a {
 	color: #000;
 }
-header.sticky ul li a:hover::after{
-	width: 100%;
-}
-header.sticky ul li a::after{
-	content: '';
-	height: 3px;
-	width: 0%;
-	background: #deca81;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	transition: width 0.5s;
+header.sticky ul li a:hover{
+	opacity: .5;
 }
 
 .banner {
@@ -176,7 +171,7 @@ header.sticky ul li a::after{
 	text-align: center;
 }
 .p-b-55{
-	padding-bottom: 25px;
+	padding-bottom: 15px;
 }
 .p{
 	font-family: 'Poppins', sans-serif;
@@ -223,4 +218,11 @@ header.sticky ul li a::after{
 .pa span{
 	color: #bfaa5a;
 	font-weight: 700;
+}
+.h5{
+	color: #fff;
+	font-weight: normal;
+	padding-bottom: 10px;
+	transform: translateX(10px);
+	opacity: .8;
 }

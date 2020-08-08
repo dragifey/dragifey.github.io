@@ -182,10 +182,9 @@ goodnight girl, i'll see you tomorrow
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--meta-->
+  <!--===========================- Open Graph -===========================-->  
 	<meta name="viewport" content="width=device.width, initial-scale=1.0">
 	<meta charset="UTF-8">
-  <!--og-->
   <meta name="twitter:card" content="summary">
   <meta property="theme-color" content="#869ae3">
   <meta name="og:description" content="Cypher is a multi-purpose created bot to entertain your server, no matter the cost! Think off games, unique features and more!">
@@ -193,13 +192,12 @@ goodnight girl, i'll see you tomorrow
   <meta name="og:title" content="Cypher - Multipurpose Discord Bot">
   <meta name="og:site_name" content="Cypher">
   <meta name="og:type" content="website">
-
   <meta name="og:image" content="https://i.imgur.com/m5joQux.png">
   <meta name="og:image:width" content="200">
   <meta name="og:image:height" content="200">
 
 	<title>Cypher - Home</title>
-	<!--links-->
+	<!--===========================- Links -===========================-->  
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="img/cypher.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -212,26 +210,31 @@ goodnight girl, i'll see you tomorrow
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" charset="utf-8"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-
-	<!--using fontawesome-->
+	<!--===========================- Using Fontawesome -===========================-->  
 	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-	<!--header-->
+  <div id="loader"></div>
+
+	<!--===========================- Navbar -===========================-->  
+
 	<header id="header">
 		<a href="#" class="logo" onclick="toggle()" data-aos="zoom-out-down" data-aos-duration="1000">cypher</a>
 		<ul data-aos="zoom-out-down" data-aos-duration="1000">
 			<li><a href="#" onclick="toggle()">Home</a></li>
 			<li><a href="pages/construction/construction.html" onclick="toggle()">Commands</a></li>
-			<li><a href="#" onclick="toggle()">Dashboard</a></li>
+			<!-- <li><a href="#" onclick="toggle()">Dashboard</a></li> -->
 			<li><a href="https://discord.gg/JxUMeHq" target="_blank">Support</a></li>
-			<li><a href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank">Invite</a></li>
+			<li><a class="inv-button" href="https://discordapp.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" target="_blank">Invite</a>
+      <!-- <li><i class="fa fa-user"></i></li> -->
+      </li>
     </ul>
     <div class="toggle" onclick="toggle()"></div>
 	</header>
 
-	<!--banner-->
+	<!--===========================- Landingpage -===========================-->  
+
 	<section class="banner" id="home">
 		<div class="home-content">
 			<h3 data-aos="fade-up" data-aos-duration="1000" style="color: #FFFFFF;">
@@ -253,8 +256,8 @@ goodnight girl, i'll see you tomorrow
 				<br>
 				to make awesome things.
 			</h1>
-			<a href="#" class="btn"  data-aos="fade-up" data-aos-duration="1200">
-        Read More
+			<a href="https://discord.com/oauth2/authorize?client_id=698234168785764432&permissions=8&scope=bot" class="btn"  target="_blank" data-aos="fade-up" data-aos-duration="1200">
+        Add to Discord
         <span></span>
         <span></span>
         <span></span>
@@ -262,19 +265,21 @@ goodnight girl, i'll see you tomorrow
       </a>
 		</div>
 	</section>
-	<!--why-->
+
+	<!--===========================- Owl Carousel -===========================-->  
+
     <section class="services-section" id="features">
       <div class="inner-width">
         <h1 data-aos="fade-down" data-aos-duration="1000">what we offer</h1>
-        <h2 data-aos="fade-down" data-aos-duration="800">We love to add new features.<br>Check out what we offer below!</h2>
+        <h2 data-aos="fade-down" data-aos-duration="800">Ofcourse, an awesome bot requires awesome features<br>Here are ours!</h2>
         <div class="services owl-carousel" data-aos="fade-up" data-aos-duration="1000">
 
           <div class="service">
             <div class="service-icon">
               <i class="fas fa-gamepad"></i>
             </div>
-            <div class="service-name">Loads of Fun</div>
-            <div class="service-desc">We have over <span>15+</span> fun commands for everyone to try out!</div>
+            <div class="service-name">Entertraining Purposes</div>
+            <div class="service-desc">We have a ton of commands for you to try it out and expreience what they do</div>
           </div>
 
           <div class="service">
@@ -290,7 +295,7 @@ goodnight girl, i'll see you tomorrow
               <i class="fas fa-terminal"></i>
             </div>
             <div class="service-name">Unique Commands</div>
-            <div class="service-desc">Ever heard of a <span>Gradient</span> command that makes role gradients? No? You're clearly missing out. Why not try it?</div>
+            <div class="service-desc">Cypher offers a <span>gradient</span> command that allows you to make a gradient from role A to B. Isn't that awesome?</div>
           </div>
 
           <div class="service">
@@ -298,7 +303,7 @@ goodnight girl, i'll see you tomorrow
               <i class="fas fa-bug"></i>
             </div>
             <div class="service-name">*sprays bugs*</div>
-            <div class="service-desc">We try to slap all the bugs that are affecting our bots.</div>
+            <div class="service-desc">We try to slap all the bugs that are affecting our bots immediately. </div>
           </div>
 
           <div class="service">
@@ -306,7 +311,7 @@ goodnight girl, i'll see you tomorrow
               <i class="fa fa-window-maximize"></i>
             </div>
             <div class="service-name">Dashboard</div>
-            <div class="service-desc">Our dashboard has been designed so it's usable for everyone.</div>
+            <div class="service-desc"><span>Coming Soon!</span> Our dashboard has been designed so it's usable for everyone.</div>
           </div>
             <div class="service">
                 <div class="service-icon">
@@ -322,20 +327,20 @@ goodnight girl, i'll see you tomorrow
     </section>
     <!--goals-->
 <!--    <section>-->
-      <div class="wavey">
+<!--       <div class="wavey">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#000" fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,117.3C840,117,960,171,1080,176C1200,181,1320,139,1380,117.3L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
             </path>
           </svg> 
-      </div>    
+      </div>  -->   
     <section class="sec stats">
       <div class="content">
-        <div class="mxw800p" data-aos="fade-up" data-aos-duration="1000">
+        <div class="mxw800p" data-aos="fade-down" data-aos-duration="1000">
           <h3>Our Goals</h3>
-          <p>We strive hard to achieve our goals before the end of the year. We all have dreams and our dream are these!</p>
-          <p class="small-text">Once we achieved a goal, the hover effect will be <span>Green!</span></p>
-          <a href="https://discord.com/api/oauth2/authorize?client_id=677908112908484619&permissions=8&scope=bot" target="_blank" class="content-btn">help us</a>
-        </div>
+          <p>Everyone has goals, so do we! We try to get all our missions before a certain time. Completed a goal? <span>Then the hover effect will be green.</span></p>
+          <!-- <a href="https://discord.com/api/oauth2/authorize?client_id=677908112908484619&permissions=8&scope=bot" target="_blank" class="content-btn">down to help?</a>
+ -->        </div>
+
         <div class="statsBox">
           <div class="box">
             <h2 class="num" data-aos="fade-up" data-aos-duration="1400">200+</h2>
@@ -348,26 +353,52 @@ goodnight girl, i'll see you tomorrow
           <div class="box">
             <h2 class="completed" data-aos="fade-up" data-aos-duration="1400">Verified</h2>
           </div>
-          <div class="box">
-            <h2 class="num" data-aos="fade-up" data-aos-duration="1400">20+</h2>
-            <h4 data-aos="fade-up" data-aos-duration="1400">New Features</h4>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="server">
+
+          <h3 class="server-text" data-aos="fade-down" data-aos-duration="1000">
+            require help?
+          </h3>
+
+          <p data-aos="fade-down" data-aos-duration="1000">Require assistance? Our Discord server has you covered! Here's why..</p>
+          <div class="server-section">
+            <div class="server-inner" data-aos="fade-up" data-aos-duration="1400">
+
+              <div class="server-box">
+                <div class="icon">
+                  <i class="fa fa-paper-plane" style="color: #89b098; font-size: 45px; "></i>
+                </div>
+                <h1>Quick Responses</h1>
+                <p>We make sure all of our members get the fast support they need.</p>
+              </div>
+
+              <div class="server-box">
+                <div class="icon">
+                  <i class="fas fa-hat-cowboy" style="color: #89b098; font-size: 45px;"></i>
+                </div>
+                <h1>Wholesome Community</h1>
+                <p>Our community might not be the biggest, but we for sure are welcoming!</p>
+              </div>
+
+              <div class="server-box">
+                <div class="icon">
+                  <i class="fas fa-hammer" style="color: #89b098; font-size: 45px;"></i>
+                </div>
+                <h1>Moderated 24/7</h1>
+                <p>Everyone in our staff team are from different timezones. Which means that we're able to moderate when the others are asleep!</p>
+              </div>
           </div>
         </div>
-      </div>
+        <a href="https://discord.gg/JxUMeHq" target="_blank" class="content-btn">join now</a>
     </section>
-
-    <!--wave-->
-      <!--premium-->
-    <div class="premium">
-    	<h1>More than that?</h1>
-      <h2>Why dont you give <span>Cypher Premium</span> a try?<br> Here's what it offers!</h2>
-
-    	<!--<a href="#" class="button rounded purple-average white-text huge animated button">Get Premium</a>-->
-    </div>
     <!--footer-->
     <footer>
       <p class="text">Cypher.</p>
-      <h2 class="header2">Explore new shit</h2>
+      <h2 class="header2">TRY SOMETHING NEW!
+</h2>
       <ul class="list-footer">
         <li><a href="https://discord.com/api/oauth2/authorize?client_id=677908112908484619&permissions=8&scope=bot" target="_blank">Add to Discord</a></li>
         <li><a href="pages/construction/construction.html">Commands</a></li>
@@ -384,8 +415,6 @@ goodnight girl, i'll see you tomorrow
         <div class="credit-part">
 
           <i class="fa fa-code"></i>
-            with
-          <i class="fa fa-heart"></i>
             by
             <a class="credits-p" href="https://twitter.com/fruittles1" target="_blank">Dragonic#3535</a>
         </div>
@@ -444,5 +473,31 @@ goodnight girl, i'll see you tomorrow
   <script>
     AOS.init();
 </script>
+  <script type="text/javascript">
+    
+    var loader;
+    function loadNow(opacity){
+      if(opacity <= 0) {
+        displayContent();
+      }
+      else{
+        loader.style.opacity = opacity;
+        window.setTimeout(function() {
+          loadNow(opacity - 0.098)
+        }, 100);
+      }
+    }
+
+    function displayContent() {
+      loader.style.display = 'none';
+      document.getElementById('content').style.display = 'block'
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+      loader = document.getElementById('loader');
+      loadNow(1);
+    })
+
+  </script>
 </body>
 </html>

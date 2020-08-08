@@ -5,12 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="twitter:card" content="summary">
 	<meta name="theme-color" content="#869ae3">
-	<meta name="og:description" content="Meet Cypher's team!">
+	<meta name="og:description" content="On this pgae you'll meet all of Cypher's creators!">
 	<meta name="og:url" content="http://cypher.kcomain.me">
 	<meta name="og:title" content="Cypher - Team">
-	<meta name="og:image" content="https://imgur.com/m5joQux">
 	<meta name="og:site_name" content="Cypher">
 	<meta name="og:type" content="website">	
+
+	<meta name="og:image" content="https://i.imgur.com/m5joQux.png">
+  	<meta name="og:image:width" content="200">
+  	<meta name="og:image:height" content="200">
 	<title>Cypher - Team</title>
 	<!--links-->
 	<link rel="stylesheet" href="teams.css">
@@ -28,6 +31,7 @@
 	<script src="https://use.fontawesome.com/releases/v5.5.0/css/all.css"></script>
 </head>
 <body>
+	<div id="loader"></div>
 	<!--header-->
 	<header id="header"> 
 		<a href="../../index.html" class="logo" onclick="toggle()">cypher</a>
@@ -48,15 +52,15 @@
 			<div class="pers" data-aos="fade-down" data-aos-duration="1800">
 				
 				<div class="pe">
-					<img src="img/zac.gif" alt="">
+					<img src="img/zak.png" alt="">
 					<div class="p-name">appraiise#6117</div>
-					<div class="p-des">Project Leader</div>
+					<div class="p-des"><i class="fas fa-crown"></i> Developer</div>
 					<div class="p-sm">
 						<a href="https://twitter.com/appraiise" target="_blank"><i class="fab fa-twitter"></i></a>
 					</div>
 				</div>
 				<div class="pe">
-					<img src="img/robert.png" alt="">
+					<img src="img/dragi2.jpg" alt="">
 					<div class="p-name">Dragonic#7894</div>
 					<div class="p-des">Website Designer & Developer</div>
 					<div class="p-sm">
@@ -65,7 +69,7 @@
 					</div>
 				</div>
 				<div class="pe">
-					<img src="img/kenny.png" alt="">
+					<img src="img/lava_robert.png" alt="">
 					<div class="p-name">Kcomain#2020</div>
 					<div class="p-des">Developer</div>
 					<div class="p-sm">
@@ -84,7 +88,7 @@
 					</div>
 				</div>
 				<div class="pe">
-					<img src="img/sloth.png" alt="">
+					<img src="img/sloth_.on._tabasco.png" alt="">
 					<div class="p-name">sloth_.on._tabasco#9015</div>
 					<div class="p-des">Developer</div>
 					<div class="p-sm">
@@ -100,15 +104,16 @@
 					</div>
 				</div>
 				<div class="pe">
-					<img src="img/lindsey.gif" alt="">
+					<img src="img/lindsey.png" alt="">
 					<div class="p-name">Lindsey#0001</div>
 					<div class="p-des">Developer</div>
 					<div class="p-sm">
+						<a href="https://github.com/lindseyontop" target="_blank"><i class="fab fa-github"></i></a>
 						<a href="https://twitter.com/dysphxr1a" target="_blank"><i class="fab fa-twitter"></i></a>
 					</div>
 				</div>
 				<div class="pe">
-					<img src="img/ulti.gif" alt="">
+					<img src="img/ultimus.gif" alt="">
 					<div class="p-name">ultimus#0001</div>
 					<div class="p-des">Developer</div>
 					<div class="p-sm">
@@ -116,11 +121,11 @@
 					</div>
 				</div>
 				<div class="pe">
-					<img src="img/a_d65615dbb75ddf22af848a1a41b6be03.gif" alt="">
+					<img src="img/cooli.png" alt="">
 					<div class="p-name">cooli#0001</div>
-					<div class="p-des">the fat chonck</div>
+					<div class="p-des">Developer</div>
 					<div class="p-sm">
-						<a href="https://twitter.com/Priultimus" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://twitter.com/notsocooli" target="_blank"><i class="fab fa-twitter"></i></a>
 					</div>
 				</div>
 			</div>
@@ -128,7 +133,8 @@
 	</div>
 	<div class="support-section">
 		<div class="support-width">
-			<h1 data-aos="fade-down" data-aos-duration="1000">Support Team</h1>
+			<h1 data-aos="fade-down" data-aos-duration="1000">Contributers</h1>
+			<p class="pt" data-aos="fade-down" data-aos-duration="1000">These members have contributed to the work of Cypher</p>
 			<div class="pers" data-aos="fade-down" data-aos-duration="1800">
 				
 				<div class="pes">
@@ -175,5 +181,32 @@
   	<script>
     	AOS.init();
 	</script>
+
+	<script type="text/javascript">
+    
+	    var loader;
+	    function loadNow(opacity){
+	      if(opacity <= 0) {
+	        displayContent();
+	      }
+	      else{
+	        loader.style.opacity = opacity;
+	        window.setTimeout(function() {
+	          loadNow(opacity - 0.098)
+	        }, 100);
+	      }
+	    }
+
+	    function displayContent() {
+	      loader.style.display = 'none';
+	      document.getElementById('content').style.display = 'block'
+	    }
+
+	    document.addEventListener("DOMContentLoaded", function() {
+	      loader = document.getElementById('loader');
+	      loadNow(1);
+	    })
+
+  </script>
 </body>
 </html>
